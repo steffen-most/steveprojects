@@ -9882,56 +9882,38 @@ h3 {
 
 body {
   font-family: "Titillium Web", sans-serif;
+  font-size: large;
+  line-height: 1.5;
   background: #eeeeee;
 }
-@media (max-width: 991.98px) {
-  body {
-    background: red;
-  }
+
+.full-size-container {
+  width: 100vw;
+  height: 100vh;
 }
 
-.block {
-  background: #cfcfcf;
-  margin-bottom: 4rem;
-  flex-direction: row;
-}
-.block img {
-  width: 100%;
-  height: auto;
-}
-.block h2 {
-  margin-bottom: 2rem;
-}
-.block a {
-  text-decoration: none;
-}
-.block #htmlLb {
-  color: #e44d26;
-}
-.block #cssLb {
-  color: #264de4;
-}
-.block #jsLb {
-  color: #f7df1e;
-}
-.block #phpLb {
-  color: #9211c8;
-}
-.block p {
-  line-height: 1.4;
-  font-size: 1.2rem;
-  margin-bottom: 0;
-}
-.block > div:nth-child(even) {
-  padding: 1rem 2rem;
+[id=titleContainer] {
+  position: absolute;
+  bottom: 50px;
+  color: #e7e7e7;
 }
 
-.block > div:nth-child(odd) {
-  padding: 0;
+nav.bg-dark {
+  background-color: rgba(38, 42, 46, 0.85) !important;
 }
-
-.block:nth-child(even) {
-  order: 2;
+nav.navbar {
+  text-transform: uppercase !important;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+nav .navbar-brand img {
+  height: 1.5rem;
+}
+nav.navbar-dark .navbar-nav .nav-item {
+  padding-left: 0.8rem;
+}
+nav.navbar-dark .navbar-nav .nav-item .nav-link.active, nav.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #8923ff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

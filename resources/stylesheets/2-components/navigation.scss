@@ -1,0 +1,29 @@
+nav{
+    &.bg-dark{
+        background-color: rgba(38,42,46,0.85) !important;
+    }
+
+    &.navbar {
+        text-transform: uppercase !important;
+        font-weight: 700;
+        letter-spacing: .1rem;
+    }
+
+    .navbar-brand img{
+        height: 1.5rem;
+    }
+
+    &.navbar-dark{
+        .navbar-nav{
+            .nav-item{
+                padding-left: .8rem;
+
+                .nav-link.active, .nav-link:hover{
+                        color: rgb(137, 35, 255) !important;
+                }
+            }
+           
+        }
+    }
+
+}
