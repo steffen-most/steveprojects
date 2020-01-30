@@ -2,15 +2,23 @@
     margin: 0;
     padding: 0;
     //box-sizing: border-box;
+
+    font-size: medium;
+
+    @include media-breakpoint-up(md){
+        font-size: large;
+    }
+
+
 }
 
 
 body{
     font-family: 'Titillium Web', sans-serif;
-    font-size: large;
+
+
     line-height: 1.5;
     background: #eeeeee;
-
 }
 
 

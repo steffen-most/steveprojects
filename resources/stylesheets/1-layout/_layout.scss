@@ -1,0 +1,32 @@
+.full-size-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+[id="titleContainer"]{
+    position: relative;
+    top: 50vh;
+    color: $white-text-color;
+
+    .social-links{
+        margin-top: 2rem;
+
+        a:first-of-type{
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        a{
+            display: inline-block;
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+        }
+
+        i{
+            font-size: 3rem;
+            color: $white-text-color;
+        }
+    }
+
+
+}

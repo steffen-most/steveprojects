@@ -1,0 +1,91 @@
+.btn-an{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: .1rem;
+    margin: 0 0 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+        
+    &:hover { text-decoration: none; }
+    
+}
+
+/* -------------- Button 1 --------------- */
+.btn-1 {
+    background: darken(rgb(77, 32, 184), 1.5%);
+    font-weight: 100;
+    
+    svg {
+      height: 45px;
+      left: 0;
+      position: absolute;
+      top: 0; 
+      width: 100%; 
+    }
+    
+    rect {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-dasharray: 422, 0;
+      transition: all 0.35s linear;
+    }
+}
+  
+.btn-1:hover {
+    background: rgba(77, 32, 184, 0);
+    color: $white-text-color;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+/* -------------- Button 2 --------------- */
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: .3rem;
+  color: white;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
