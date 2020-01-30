@@ -22,65 +22,211 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-    <!-- Home Section -->
-    <div id="home" class="full-size-container"
-        style="background-image: url('resources/graphics/background_gradient.jpg');">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="index.html"><img src="resources/graphics/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <!-- Home Section -->
+        <div id="home" class="full-size-container"
+            style="background-image: url('resources/graphics/background_gradient.jpg');">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="resources/graphics/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div id="navbarResponsive" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#overview">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                <div id="navbarResponsive" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Content Creation</a>
+                                <a class="dropdown-item" href="#">Web Dev. Blog</a>
+                                <a class="dropdown-item" href="#">Cooking Diary</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-        </nav>
-
-        <div id="titleContainer" class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Hi, i'm Steve & a newbie Webdesigner</h1>
-                    <p>Now what exactly do I do?</p>
-                    <a href="#overview" class="enable-animation btn-an btn-1"> <svg class="enable-animation">
-                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
-                        </svg>Discover</a>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/steve96.music"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/c/steffenem"><i class="fab fa-youtube"></i></a>
-                        <a href="https://github.com/steffen-most"><i class="fab fa-github"></i></a>
-                        <a href="mailto:steffen.most@gmx.de"><i class="fas fa-envelope"></i></a>
+            <div id="titleContainer" class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Hi, i'm Steve & a newbie Webdesigner</h1>
+                        <p>Now what exactly do I do?</p>
+                        <a href="#overview" class="enable-animation btn-an btn-1"> <svg class="enable-animation">
+                                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                            </svg>Discover</a>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/steve96.music"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/c/steffenem"><i class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/steffen-most"><i class="fab fa-github"></i></a>
+                            <a href="mailto:steffen.most@gmx.de"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Overview -->
-    <div id="overview" data-aos="fade-bottom">
+    <main>
+        <!-- Title Section -->
+        <div class="container my-5" data-aos="zoom-in">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Target the path.</h2>
+                    <p>When your target in life hasn't yet shown up to you...why wait? Make the journey to your life
+                        target.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Img Section -->
+
+        <figure>
+            <div class="fixed-wrap">
+                <div id="fixed">
+
+                </div>
+            </div>
+        </figure>
+
+        <!-- Overview -->
+        <div id="overview" class="container pt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Projects I'm currently working on</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mt-4" data-aos="fade-up">
+            <div class="row justify-content-between">
+                <div class="content-box">
+                    <img src="resources/images/creation.png" class="img-fluid" alt="">
+                    <div class="text-content">
+                        <div>
+                            <h3 class="enable-animation">Content Creation</h3>
+                            <a href="#" class="enable-animation btn-an btn-1 mt-2"> <svg class="enable-animation">
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <img src="resources/images/code.png" class="img-fluid" alt="">
+                    <div class="text-content">
+                        <div>
+                            <h3 class="enable-animation">Web Development Blog</h3>
+                            <a href="#" class="enable-animation btn-an btn-1 mt-2"> <svg class="enable-animation">
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <img src="resources/images/cooking.png" class="img-fluid" alt="">
+
+                    <div class="text-content">
+                        <div>
+                            <h3 class="enable-animation">Cooking Diary</h3>
+                            <a href="#" class="enable-animation btn-an btn-1 mt-2"> <svg class="enable-animation">
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>Discover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="container-fluid mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Music</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentCreation" class="container mt-5">
+                <div class="row">
+                    <div class="col px-0">
+                        <iframe id="youtube" width="100%" height="315"
+                            src="https://www.youtube.com/embed/1hHWomZgUcs?start=165" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="container mt-5" data-aos="fade-right">
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-8">
+                    <h2>Contact me</h2>
+                    <p>Send me an email</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur dolor voluptatibus
+                        repellat sunt laborum cumque natus earum eaque accusantium excepturi quos amet, ipsum
+                        repellendus maxime facere laboriosam possimus asperiores, laudantium dolorum sint! Aperiam
+                        reprehenderit quibusdam sunt tempore vel? Esse perferendis molestias cumque ipsa nam, eligendi
+                        magni provident quos, commodi dolorem aliquid quaerat autem pariatur harum. Ad facilis natus nam
+                        omnis fugiat nesciunt corporis ducimus ratione, exercitationem sequi totam, placeat eaque
+                        quisquam blanditiis. Laborum quia soluta nobis aut exercitationem eaque ipsa eius magni
+                        cupiditate officia incidunt, dolor iste perferendis eveniet adipisci ad deserunt nesciunt
+                        recusandae minus modi. Sequi, nisi perspiciatis.</p>
 
 
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 my-auto">
+                    <img src="resources/images/profile.jpg" class="border-rounded img-fluid">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab repellendus delectus culpa iste
+                        quam, at atque nam alias, ex adipisci magni! Illum necessitatibus enim possimus quia rem
+                        voluptates earum aut dolorum debitis vel soluta dignissimos vero pariatur veritatis ad,
+                        cupiditate expedita iure praesentium? Dicta sapiente molestias doloremque facere pariatur eos
+                        qui sed ipsam, velit nobis aperiam magni quis voluptate excepturi aliquid consequatur ad sequi.
+                        Soluta explicabo voluptatum ratione odio sequi quia sed reprehenderit consequuntur doloremque
+                        nam eaque, placeat hic eligendi laboriosam libero distinctio suscipit quos unde repellendus
+                        ullam est impedit! Quaerat, sint cum, magnam repellendus rem nulla sapiente eaque, neque
+                        blanditiis dolores at placeat exercitationem odio. Id, deleniti autem. Totam natus incidunt
+                        illum blanditiis recusandae nostrum in ipsum magnam, nesciunt tempora odio culpa dicta error
+                        enim a excepturi! Omnis, sequi nulla illum fugit dolor corporis consequuntur enim nemo vel
+                        necessitatibus tempore velit vitae et facere hic quia minus commodi voluptatem distinctio
+                        libero! Adipisci blanditiis quia veniam nulla expedita laborum ullam vero, debitis officia nobis
+                        quis, consectetur amet in incidunt itaque corrupti quos officiis, doloremque porro quod
+                        recusandae quas ducimus qui illum? Dolores aliquam repellat exercitationem nihil eum ducimus eos
+                        cum et, explicabo illum nisi. Odio eaque harum expedita quisquam.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-    </div>
-
-    <!-- Contact -->
-    <div id="contact" data-aos="fade-bottom">
-
-    </div>
-
-
+    <!-- data-aos="fade-bottom" -->
 
 
     <!-- Optional JavaScript -->
@@ -89,10 +235,16 @@
     <script src="resources/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="resources/vendors/aos/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
     </script>
+
+    <!-- Own scripts -->
+    <script src="resources/scripts/youtube.js"></script>
 </body>
 
 </html>

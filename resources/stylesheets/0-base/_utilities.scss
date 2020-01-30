@@ -1,4 +1,5 @@
 $white-text-color: #e7e7e7;
+$standard-box-shadow: 10px 10px 10px grey;
 
 .enable-animation{
     -webkit-transition-property: all;
@@ -7,4 +8,9 @@ $white-text-color: #e7e7e7;
     transition-duration: .6s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
+}
+
+.border-rounded{
+    border: 4px solid #fff;
+    border-radius: 50%;
 }

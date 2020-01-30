@@ -1,0 +1,100 @@
+.content-box{
+
+    display: block;
+    flex: unset;
+
+    @include media-breakpoint-up(md){
+        flex: 0 0 32%;
+        margin:0;
+    }
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    //allows img to zoom in without extending the elements content area
+    overflow: hidden;
+    box-shadow: $standard-box-shadow;
+
+    img{
+        transition: transform .5s, filter 1.5s ease-in-out;
+        filter: grayscale(1);
+        width: 100%;
+    }
+
+    .text-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: $white-text-color;
+        text-align: center;
+
+        h3{
+            text-shadow: 2px 2px 2px black;
+        }
+    }
+
+    &:hover{
+        img{
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+
+        .text-content{
+            color: #fff;
+        }
+    }
+}
+
+.content-box:first-child{
+    margin-top: 0;
+}
+
+
+/*--- Fixed Background Image --*/
+figure {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 !important;
+
+    .fixed-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      [id="fixed"] {
+        background-image: url('../images/drawing.jpg');
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        will-change: transform;
+        }
+  }
+
+  /* Youtube */
+  [id="youtube"]{
+      box-shadow: $standard-box-shadow;
+  }

@@ -1,14 +1,13 @@
 .btn-an{
     display: inline-block;
     text-align: center;
-    color: #fff;
+    color: $white-text-color;
     cursor: pointer;
     // display: block;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 45px;
     letter-spacing: .1rem;
-    margin: 0 0 2em;
     max-width: 160px; 
     position: relative;
     text-decoration: none;
@@ -43,7 +42,7 @@
   
 .btn-1:hover {
     background: rgba(77, 32, 184, 0);
-    color: $white-text-color;
+    color: #fff;
     font-weight: 900;
     letter-spacing: .2rem;
     
