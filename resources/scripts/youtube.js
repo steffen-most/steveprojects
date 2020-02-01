@@ -1,7 +1,12 @@
-let container_width = document.getElementById("youtube").scrollWidth;
-let new_width = container_width/16*9;
+let element = document.getElementById("youtube");
 
-console.log(container_width);
-console.log(new_width);
+window.addEventListener('resize', resizeYt);
 
-$("#youtube").attr("height",new_width);
+function resizeYt(){
+    var width=element.scrollWidth;
+    var height=width/16*9;
+    $("#youtube").attr("height", height);
+}
+
+//first call when page is loaded;
+resizeYt(); 

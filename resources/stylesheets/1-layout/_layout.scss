@@ -7,23 +7,63 @@
     top: 50vh;
     color: $white-text-color;
 
-    .social-links{
-        margin-top: 3.5rem;
+    @include media-breakpoint-down(xs){
+        top: 12vh;
+        text-align: center;
+    }
 
+    .social-links{
+        h2{
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+        }
+
+        margin-top: 5rem;
+
+        
         a:first-of-type{
             padding-left: 0;
             margin-left: 0;
         }
+        
 
         a{
             display: inline-block;
-            padding: 0 1rem;
+            padding: 1rem 1rem;
             margin: 0 0.5rem;
+
+            @include media-breakpoint-up(lg){
+                margin: 0 1rem;
+            }
         }
 
         i{
             font-size: 3rem;
             color: $white-text-color;
         }
+    }
+}
+
+.language-flag{
+    position: absolute;
+    left: 200px;
+    border: 2px solid white;
+}
+
+
+[id="contact"]{
+    border-top: 2px solid $dark-background-color;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        top: 0;
+        right: 7%;
+        content: '';
+        width: 40px;
+        height: 80px;
+        // background: linear-gradient(to bottom, $dark-background-color 70%, transparent 113%);
+        background-color: $dark-background-color;
+        box-shadow: 3px 3px 5px grey;
     }
 }

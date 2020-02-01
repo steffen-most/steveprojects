@@ -1,5 +1,6 @@
 $white-text-color: #e7e7e7;
 $standard-box-shadow: 10px 10px 10px grey;
+$dark-background-color: #222222;
 
 .enable-animation{
     -webkit-transition-property: all;
@@ -13,4 +14,15 @@ $standard-box-shadow: 10px 10px 10px grey;
 .border-rounded{
     border: 4px solid #fff;
     border-radius: 50%;
+}
+
+.position-absolute-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.z-index-1{
+    z-index: 1;
 }
