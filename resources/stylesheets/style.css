@@ -9994,6 +9994,12 @@ footer {
 footer p {
   font-size: 0.8rem;
 }
+footer [id=impressum] {
+  border-top: 2px solid #e7e7e7;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
 
 nav.bg-dark {
   background-color: rgba(38, 42, 46, 0.85) !important;

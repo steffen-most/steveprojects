@@ -4,4 +4,12 @@ footer{
     p{
         font-size: 0.8rem;
     }
+
+    [id="impressum"]{
+        border-top: 2px solid $white-text-color;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
 }
+
