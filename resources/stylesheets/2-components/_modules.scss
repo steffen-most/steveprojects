@@ -94,6 +94,24 @@ figure {
         }
   }
 
+
+  .preview-box{
+    //display: none;
+    position: relative;
+    width: unset;
+    margin: 0 20px;
+    padding: 0 15px;
+    border-left: 2px solid  $dark-gradient-color;
+    border-right: 2px solid  $dark-gradient-color;
+
+    a{
+        position: absolute;
+        right: 0;
+        top: 20%;
+        max-width: 100px;
+    }
+  }
+
   /* Youtube */
   [id="youtube"]{
       box-shadow: $standard-box-shadow;

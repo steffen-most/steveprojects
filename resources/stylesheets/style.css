@@ -9972,11 +9972,11 @@ p {
   border: 2px solid white;
 }
 
-[id=contact] {
+[id=about] {
   border-top: 2px solid #222222;
   position: relative;
 }
-[id=contact]::before {
+[id=about]::before {
   position: absolute;
   top: 0;
   right: 7%;
@@ -9985,6 +9985,33 @@ p {
   height: 80px;
   background-color: #222222;
   box-shadow: 3px 3px 5px grey;
+}
+
+[id=vita] {
+  position: relative;
+}
+[id=vita] li {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+[id=vita] li p {
+  font-size: 1.1rem;
+}
+[id=vita] dl dt {
+  font-size: 1.3rem;
+}
+[id=vita] dl dd {
+  font-style: italic;
+}
+[id=vita]::before {
+  position: absolute;
+  top: 17px;
+  left: -22px;
+  bottom: 5px;
+  width: 3px;
+  background: #555;
+  content: "";
+  z-index: -1;
 }
 
 footer {
@@ -10105,6 +10132,21 @@ figure [id=fixed] {
   will-change: transform;
 }
 
+.preview-box {
+  position: relative;
+  width: unset;
+  margin: 0 20px;
+  padding: 0 15px;
+  border-left: 2px solid #4a1fb1;
+  border-right: 2px solid #4a1fb1;
+}
+.preview-box a {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  max-width: 100px;
+}
+
 /* Youtube */
 [id=youtube] {
   box-shadow: 10px 10px 10px grey;
@@ -10131,7 +10173,7 @@ figure [id=fixed] {
 
 /* -------------- Button 1 --------------- */
 .btn-1 {
-  background: #4a1fb1;
+  background: #471eaa;
   font-weight: 100;
 }
 .btn-1 svg {
@@ -10194,6 +10236,35 @@ figure [id=fixed] {
   bottom: auto;
   top: 0;
   width: 100%;
+}
+
+/* -------------- Button 3 --------------- */
+.btn-3 {
+  background-color: #4a1fb1;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.btn-3 span {
+  z-index: 20;
+}
+.btn-3:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: 10;
+}
+
+.btn-3:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /*# sourceMappingURL=style.css.map */

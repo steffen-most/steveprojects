@@ -51,7 +51,7 @@
 }
 
 
-[id="contact"]{
+[id="about"]{
     border-top: 2px solid $dark-background-color;
     position: relative;
 
@@ -67,3 +67,37 @@
         box-shadow: 3px 3px 5px grey;
     }
 }
+
+[id="vita"]{
+    position: relative;
+    
+    li{
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+    dl{
+        dt{
+            font-size: 1.3rem;
+        }
+        dd{
+            font-style: italic;
+        }
+    }
+
+    &::before{
+        position: absolute;
+        top: 17px;
+        left: -22px;
+        bottom: 5px;
+        width: 3px;
+        background: #555;
+        content: '';
+        z-index: -1;
+    }
+}
+
