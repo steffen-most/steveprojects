@@ -13,8 +13,9 @@
     }
 
     .social-links{
+        font-family: 'Pacifico', cursive;
+
         h2{
-            font-family: 'Pacifico', cursive;
             font-size: 1.5rem;
         }
 
@@ -35,12 +36,25 @@
             @include media-breakpoint-up(lg){
                 margin: 0 1rem;
             }
+
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: .4s;
+            transition-duration: .4s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+
+        a:hover{
+            transform: scale(1.1);
         }
 
         i{
             font-size: 3rem;
             color: $white-text-color;
         }
+
+
     }
 }
 

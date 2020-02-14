@@ -9941,10 +9941,10 @@ p {
   }
 }
 [id=titleContainer] .social-links {
+  font-family: "Pacifico", cursive;
   margin-top: 5rem;
 }
 [id=titleContainer] .social-links h2 {
-  font-family: "Pacifico", cursive;
   font-size: 1.5rem;
 }
 [id=titleContainer] .social-links a:first-of-type {
@@ -9955,11 +9955,20 @@ p {
   display: inline-block;
   padding: 1rem 1rem;
   margin: 0 0.5rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 @media (min-width: 992px) {
   [id=titleContainer] .social-links a {
     margin: 0 1rem;
   }
+}
+[id=titleContainer] .social-links a:hover {
+  transform: scale(1.1);
 }
 [id=titleContainer] .social-links i {
   font-size: 3rem;
@@ -10017,15 +10026,52 @@ p {
 footer {
   background-color: #222222;
   color: white;
+  padding-bottom: 1rem;
 }
-footer p {
-  font-size: 0.8rem;
+footer hr {
+  background-color: #e7e7e7;
+  position: relative;
+  left: 20%;
+  width: 60%;
+  right: 20%;
+  margin: 1.5rem 0;
 }
-footer [id=impressum] {
+footer [id=imprint] {
   border-top: 2px solid #e7e7e7;
   margin-top: 2rem;
   padding-top: 2rem;
+  /*
+  @include media-breakpoint-up(lg){
+      text-align: unset;
+  }
+
   text-align: center;
+
+  */
+}
+footer [id=imprint] dl {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer [id=imprint] dl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  footer [id=imprint] dl * + dt {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  footer [id=imprint] dl {
+    justify-content: flex-end;
+  }
+  footer [id=imprint] dl * + dt {
+    margin-left: 2rem;
+  }
+}
+footer [id=imprint] dl dd {
+  padding-left: 0.5rem;
 }
 
 nav.bg-dark {
@@ -10064,7 +10110,7 @@ nav.navbar-dark .navbar-nav .nav-item .nav-link.active, nav.navbar-dark .navbar-
   overflow: hidden;
   box-shadow: 10px 10px 10px grey;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .content-box {
     flex: 0 0 32%;
     margin: 0;
@@ -10169,6 +10215,9 @@ figure [id=fixed] {
 }
 .btn-an:hover {
   text-decoration: none;
+}
+.btn-an.small {
+  max-width: 160px;
 }
 
 /* -------------- Button 1 --------------- */

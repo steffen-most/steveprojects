@@ -15,7 +15,10 @@
     width: 100%;
         
     &:hover { text-decoration: none; }
-    
+
+    &.small{
+      max-width: 160px;
+    }
 }
 
 /* -------------- Button 1 --------------- */
