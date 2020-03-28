@@ -1,0 +1,46 @@
+[id="contact"]{
+    background-color: $light-background-color;
+
+    .form-left{
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        margin-bottom: auto;
+        padding-bottom: 3rem;
+
+
+        &::after{
+            content: '';
+            background-color: $dark-gradient-color;
+            position: absolute;
+            left: -50vw;
+            top: -6rem;
+            right: 0;
+            bottom: 0;
+            z-index: -1;     
+            box-shadow: 5px 5px 15px grey; 
+        }
+    }
+
+    form{
+        label, input{
+            display: block;
+        }
+    
+        label{
+            margin-top: 1rem;
+        }
+    
+    
+        label:first-of-type{
+            margin-top: 0;
+        }
+    
+        input, select, textarea{
+            width: 100%;
+            padding: 0.25rem 0.5rem;
+            border: none;
+        }
+    }
+}
+

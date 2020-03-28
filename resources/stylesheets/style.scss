@@ -1,9 +1,12 @@
+@import '../stylesheets/0-base/variables';
+
 @import
 '../vendors/bootstrap/scss/bootstrap',
 '../stylesheets/0-base/utilities',
-'../stylesheets/0-base/_typography',
-'../stylesheets/1-layout/_layout',
+'../stylesheets/0-base/typography',
+'../stylesheets/1-layout/layout',
 '../stylesheets/1-layout/footer',
-'../stylesheets/2-components/_navigation',
-'../stylesheets/2-components/_modules',
-'../stylesheets/2-components/_buttons';
+'../stylesheets/2-components/contact',
+'../stylesheets/2-components/navigation',
+'../stylesheets/2-components/modules',
+'../stylesheets/2-components/buttons';
